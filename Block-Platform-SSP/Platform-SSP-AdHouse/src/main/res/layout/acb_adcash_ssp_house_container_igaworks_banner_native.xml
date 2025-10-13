@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.igaworks.ssp.part.nativead.AdPopcornSSPNativeAd xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ssp_native_adview"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/acb_adcash_ssp_ad_color_banner_background"
+    android:padding="2dp">
+
+</com.igaworks.ssp.part.nativead.AdPopcornSSPNativeAd>

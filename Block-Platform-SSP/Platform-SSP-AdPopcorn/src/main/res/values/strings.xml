@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="acb_adcash_ssp_adpopcorn_string_affinity_adview">com.avatye.adcash.adview</string>
+    <string name="acb_adcash_ssp_adpopcorn_string_native_network_name_adpopcorn">ADPOPCORN</string>
+    <string name="acb_adcash_ssp_adpopcorn_string_native_network_name_applovin">APPLOVIN</string>
+    <string name="acb_adcash_ssp_adpopcorn_string_native_network_name_pangle">PANGLE</string>
+</resources>

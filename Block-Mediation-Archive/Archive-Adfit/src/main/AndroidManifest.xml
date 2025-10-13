@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk tools:overrideLibrary="com.kakao.adfit.ads" />
+
+    <application>
+        <activity
+            android:name="com.kakao.adfit.common.inappbrowser.activity.IABActivity"
+            android:taskAffinity=""
+            tools:replace="android:taskAffinity" />
+    </application>
+
+</manifest>

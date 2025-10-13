@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.avatye.adcash.mediation.archive.nam">
+    <uses-sdk tools:overrideLibrary="com.naver.gfpsdk.ext.nda,com.naver.ads.video,com.naver.ads.image,com.naver.ads.webview,com.naver.ads.deferred,com.naver.ads.common,com.naver.ads.video.exoplayer,com.naver.gfpsdk.mediation.nda,com.naver.gfpsdk,com.naver.ads" />
+
+</manifest>

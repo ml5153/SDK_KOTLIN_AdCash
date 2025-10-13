@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/native_unit_mobon_container"
+    android:layout_width="match_parent"
+    android:layout_height="227dp"
+    android:layout_centerInParent="true"
+    android:background="#fff"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/native_unit_mobon_content"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_above="@+id/native_unit_mobon_logo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:id="@+id/native_unit_mobon_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/native_unit_mobon_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/native_unit_mobon_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/native_unit_mobon_logo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#f00"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/native_unit_mobon_logo"
+        android:layout_width="40dp"
+        android:layout_height="19dp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/native_unit_mobon_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/native_unit_mobon_logo"
+        android:ellipsize="end"
+        android:lines="1"
+        android:textSize="16dp" />
+</RelativeLayout>

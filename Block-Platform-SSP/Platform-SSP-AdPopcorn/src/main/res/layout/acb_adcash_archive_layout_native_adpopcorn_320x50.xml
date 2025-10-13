@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ad_plus_native_view_adpopcorn_container_320x50"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:minWidth="320dp"
+        android:padding="1dp"
+        tools:background="#99CCFF"
+        tools:layout_width="320dp"
+        tools:visibility="visible">
+
+        <!--  region # native icon -->
+        <ImageView
+            android:id="@+id/adcash_archive_native_view_adpopcorn_icon_320x50"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            tools:background="#FF0000"
+            tools:layout_height="50dp"
+            tools:layout_width="50dp" />
+        <!-- endregion -->
+
+        <!--  region # body -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toStartOf="@+id/adcash_archive_native_view_adpopcorn_cta_320x50"
+            android:layout_toLeftOf="@+id/adcash_archive_native_view_adpopcorn_cta_320x50"
+            android:layout_toEndOf="@+id/adcash_archive_native_view_adpopcorn_icon_320x50"
+            android:layout_toRightOf="@+id/adcash_archive_native_view_adpopcorn_icon_320x50"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            tools:background="#dddddd">
+
+            <TextView
+                android:id="@+id/adcash_archive_native_view_adpopcorn_title_320x50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:text="native ad title" />
+
+            <TextView
+                android:id="@+id/adcash_archive_native_view_adpopcorn_body_320x50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#212121"
+                android:textSize="10dp"
+                tools:text="native ad description" />
+
+        </LinearLayout>
+        <!--  endregion -->
+
+        <!--  native ad call to action // -->
+        <TextView
+            android:id="@+id/adcash_archive_native_view_adpopcorn_cta_320x50"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/acb_adcash_archive_dr_ic_cta"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#d8d8d8"
+            android:textSize="12dp"
+            tools:text="call to action" />
+        <!--  // native ad call to action -->
+
+    </RelativeLayout>
+
+</RelativeLayout>

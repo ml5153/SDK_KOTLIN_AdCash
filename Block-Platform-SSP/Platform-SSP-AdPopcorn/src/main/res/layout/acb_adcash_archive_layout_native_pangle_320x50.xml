@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adcash_archive_native_view_pangle_container_320x50"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:minWidth="320dp"
+        android:padding="1dp"
+        tools:background="#99CCFF"
+        tools:layout_width="320dp"
+        tools:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/adcash_archive_native_view_pangle_image_320x50"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            tools:background="#FF0000"
+            tools:layout_height="50dp"
+            tools:layout_width="50dp" />
+
+        <ImageView
+            android:id="@+id/adcash_archive_native_view_pangle_icon_320x50"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            tools:background="#FF0000" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toStartOf="@+id/adcash_archive_native_view_pangle_cta_320x50"
+            android:layout_toLeftOf="@+id/adcash_archive_native_view_pangle_cta_320x50"
+            android:layout_toEndOf="@+id/adcash_archive_native_view_pangle_icon_320x50"
+            android:layout_toRightOf="@+id/adcash_archive_native_view_pangle_icon_320x50"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            tools:background="#dddddd">
+
+            <TextView
+                android:id="@+id/adcash_archive_native_view_pangle_title_320x50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:text="native ad title" />
+
+            <TextView
+                android:id="@+id/adcash_archive_native_view_pangle_body_320x50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#212121"
+                android:textSize="10dp"
+                tools:text="native ad description" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/adcash_archive_native_view_pangle_cta_320x50"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/acb_adcash_archive_dr_ic_cta"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#D8D8D8"
+            android:textSize="12dp"
+            tools:text="call to action" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

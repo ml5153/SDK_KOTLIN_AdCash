@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-sdk tools:overrideLibrary="com.google.android.gms.ads.impl, com.google.android.gms.ads_base, com.google.android.gms.measurement.sdk.api, com.google.android.gms.measurement_base,com.google.android.gms.ads,com.google.android.gms.tasks,com.google.android.ads.consent,com.google.android.gms.common" />
+</manifest>

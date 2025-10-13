@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:minWidth="320dp"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:background="@color/acb_adcash_ssp_ad_color_banner_background"
+        tools:visibility="visible">
+
+        <com.nasmedia.admixer.common.nativeads.NativeMainAdView
+            android:id="@+id/admixer_banner_native_main"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp">
+
+            <ImageView
+                android:id="@+id/admixer_banner_native_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                tools:background="#FF0000" />
+
+            <TextView
+                android:id="@+id/admixer_banner_native_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@+id/admixer_banner_native_icon"
+                android:layout_toRightOf="@+id/admixer_banner_native_icon"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                tools:text="native ad title" />
+
+            <TextView
+                android:id="@+id/admixer_banner_native_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admixer_banner_native_title"
+                android:layout_marginStart="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toEndOf="@+id/admixer_banner_native_icon"
+                android:layout_toRightOf="@+id/admixer_banner_native_icon"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#212121"
+                android:textSize="10dp"
+                tools:text="native ad description" />
+
+            <TextView
+                android:id="@+id/admixer_banner_native_advertiser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:lineSpacingExtra="1sp"
+                android:textColor="#c7c7c7"
+                android:textSize="8sp"
+                android:visibility="gone"
+                tools:text="native ad advertiser" />
+
+            <Button
+                android:id="@+id/admixer_banner_native_cta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/admixer_banner_native_icon"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/acb_adcash_archive_dr_ic_cta"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#D8D8D8"
+                android:textSize="12dp"
+                tools:text="call to action" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

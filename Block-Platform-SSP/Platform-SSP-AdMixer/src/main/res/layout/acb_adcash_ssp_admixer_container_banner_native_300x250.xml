@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="bottom"
+        android:minHeight="250dp"
+        android:orientation="vertical">
+
+        <!-- region # image -->
+        <com.nasmedia.admixer.common.nativeads.NativeMainAdView
+            android:id="@+id/admixer_banner_native_main"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            tools:background="#99CCFF"
+            tools:layout_height="180dp"
+            tools:layout_width="match_parent" />
+        <!-- endregion -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FFFFFF" />
+
+        <!-- region # body -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/acb_adcash_ssp_ad_color_banner_background">
+
+            <ImageView
+                android:id="@+id/admixer_banner_native_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                tools:background="#FF0000" />
+
+            <TextView
+                android:id="@+id/admixer_banner_native_advertiser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/admixer_banner_native_icon"
+                android:layout_alignParentBottom="true"
+                android:lineSpacingExtra="1sp"
+                android:textColor="#c7c7c7"
+                android:textSize="8sp"
+                android:visibility="gone"
+                tools:text="native ad advertiser" />
+
+            <TextView
+                android:id="@+id/admixer_banner_native_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/admixer_banner_native_icon"
+                android:layout_toRightOf="@+id/admixer_banner_native_icon"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:text="native ad title" />
+
+            <TextView
+                android:id="@+id/admixer_banner_native_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admixer_banner_native_title"
+                android:layout_toEndOf="@+id/admixer_banner_native_icon"
+                android:layout_toRightOf="@+id/admixer_banner_native_icon"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:textColor="#212121"
+                android:textSize="12dp"
+                tools:text="native ad description" />
+
+            <Button
+                android:id="@+id/admixer_banner_native_cta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admixer_banner_native_description"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/admixer_banner_native_icon"
+                android:layout_toRightOf="@+id/admixer_banner_native_icon"
+                android:background="@drawable/acb_adcash_archive_dr_ic_cta"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#D8D8D8"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                tools:text="call to action" />
+
+        </RelativeLayout>
+        <!-- endregion -->
+
+    </LinearLayout>
+
+</RelativeLayout>

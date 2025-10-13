@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BannerAdView">
+        <attr name="adCashBannerAdViewSize" format="enum">
+            <enum name="size_320x50" value="1" />
+            <enum name="size_320x100" value="2" />
+            <enum name="size_300x250" value="3" />
+            <enum name="dynamic" value="4" />
+        </attr>
+        <attr name="adCashBannerAdViewPlacementId" format="string" />
+    </declare-styleable>
+</resources>

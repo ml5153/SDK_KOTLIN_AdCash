@@ -1,0 +1,2 @@
+-keep class com.nasmedia.admixer.** { *; }
+-keep class com.avatye.adcash.platform.provider.admixer.** {*;}

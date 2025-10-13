@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".App"
+        android:theme="@style/Theme.ProjectAndroidSDKADCash">
+
+        <!-- region # adcash-config -->
+        <meta-data
+            android:name="avatye.config.host"
+            android:value="${config_app_host}" />
+        <meta-data
+            android:name="adcash.config.log"
+            android:value="true" />
+        <meta-data
+            android:name="adcash.config.developer"
+            android:value="true" />
+        <meta-data
+            android:name="enable_ap_log"
+            android:value="enable" />
+        <!-- endregion -->
+
+        <!-- region # adcash-doyouad-live (라이브 :true, 테스트:false -->
+        <meta-data
+            android:name="adcash.doyouad.islive"
+            android:value="${config_doyouad_islive}" />
+
+        <!-- endregion -->
+
+        <!-- region # config -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+        <meta-data
+            android:name="applovin.sdk.verbose_logging"
+            android:value="true" />
+        <!-- endregion -->
+
+        <!-- region # ads-mediation -->
+        <meta-data
+            android:name="com.naver.gfpsdk.PUBLISHER_CD"
+            android:value="@string/nam_publisher_cd" />
+
+        <meta-data
+            android:name="com.mobon.sdk.MediaCode"
+            android:value="YOUR_mobon_code" />
+        <!-- endregion -->
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".banner.Banner320X50Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".banner.BannerWidget320X50Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".banner.Banner320X100Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".banner.BannerDynamicActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".banner.BannerWidget320X100Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".banner.Banner300X250Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".banner.BannerWidget300X250Activity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".banner.BannerWidgetDynamicActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".interstitial.InterstitialActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".interstitial.InterstitialVideoActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

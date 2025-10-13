@@ -1,0 +1,1 @@
+-keep class com.avatye.adcash.platform.provider.doyouad.** {*;}
